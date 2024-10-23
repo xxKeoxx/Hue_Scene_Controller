@@ -11,7 +11,7 @@ definition(
 preferences {
     section("Hue Bridge") {
         input "hueBridgeIp", "text", title: "Hue Bridge IP", required: true
-        input "hueUsername", "text", title: "Hue API Username", required: true
+        input "hueUsername", "password", title: "Hue API Username", required: true
     }
     section("Device Name") {
         input "deviceName", "text", title: "Device Name", required: true, defaultValue: "Hue Scene Device"
